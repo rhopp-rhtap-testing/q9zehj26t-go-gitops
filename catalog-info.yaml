@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: q9zehj26t-go-gitops
+  description: This is GitOps manifest for q9zehj26t-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: q9zehj26t-go
+    backstage.io/kubernetes-id: q9zehj26t-go 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: rhopp-rhtap-testing/q9zehj26t-go-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:q9zehj26t-go
